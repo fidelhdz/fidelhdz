@@ -1,0 +1,40 @@
+<!-- Skills Section -->
+<section class="page-section" id="skills">
+    <div class="container relative">
+        
+        <div class="row">
+            
+            <div class="col-sm-3">
+                <h2 class="section-title font-alt align-left mt-0 mb-70 mb-sm-40">Skills</h2>
+            </div>
+            
+            <div class="col-sm-9">
+                
+                <div class="section-text mb-50 mb-xs-30">
+                    Larensy in&nbsp;auctor ex&nbsp;id&nbsp;urna faucibus porttitor. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. In&nbsp;maximus ligula semper metus pellentesque mattis.  
+                    Maecenas volutpat, diam enim sagittis quam, id&nbsp;porta quam. Sed id&nbsp;dolor 
+                    consectetur fermentum nibh volutpat, accumsan purus.
+                </div>
+                
+                <div class="row">
+
+                    <div class="col-sm-12 mb-sm-50 mb-xs-30">
+                        <!-- Bar Item -->
+                        <div class="progress tpl-progress" *ngFor="let bar of aria; let i = index;">
+                            <div class="progress-bar" [style.backgroundColor]="bar.color" [style.width]="bar.ariaW + '%'" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                {{ bar.item }}, % <span>{{ bar.ariaW }}</span>
+                            </div>
+                        </div>
+                        <!-- End Bar Item -->
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+<!-- End Skills Section -->
