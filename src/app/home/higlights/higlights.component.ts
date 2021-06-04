@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HiglightsComponent implements OnInit {
 
-  backgroundURL:string = "../../../assets/images/section-bg-1.jpg";
+  backgroundURL:string = "https://picsum.photos/id/495/1920/1080";
 
 
   constructor() { }

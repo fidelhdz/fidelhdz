@@ -12,7 +12,7 @@ export class HomeSectionComponent implements OnInit {
   phone:string = "+52 81 1050 3399";
   email:string = "fidel.hdz@me.com";
   status:string = "Available";
-  backgroundURL:string = "../../../assets/images/section-bg-1.jpg";
+  backgroundURL:string = "https://picsum.photos/id/201/1920/1080";
 
   constructor() { }
 
