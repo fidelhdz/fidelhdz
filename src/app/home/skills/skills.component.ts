@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
+  title: string = 'Skills';
 
   aria:any = [
     {
       ariaW: 92,
       item: 'CSS3',
-      color: '#E0457F'
+      color: '#bd75ff'
     },
     {
       ariaW: 95,

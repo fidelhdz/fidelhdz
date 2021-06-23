@@ -5,7 +5,7 @@
         <div class="row">
             
             <div class="col-sm-3">
-                <h2 class="section-title font-alt align-left mt-0 mb-70 mb-sm-40">Skills</h2>
+                <h2 class="section-title font-alt align-left mt-0 mb-70 mb-sm-40">{{ title }}</h2>
             </div>
             
             <div class="col-sm-9">
@@ -20,13 +20,15 @@
                 <div class="row">
 
                     <div class="col-sm-12 mb-sm-50 mb-xs-30">
-                        <!-- Bar Item -->
-                        <div class="progress tpl-progress" *ngFor="let bar of aria; let i = index;">
-                            <div class="progress-bar" [style.backgroundColor]="bar.color" [style.width]="bar.ariaW + '%'" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                                {{ bar.item }}, % <span>{{ bar.ariaW }}</span>
-                            </div>
-                        </div>
-                        <!-- End Bar Item -->
+                        <ul>
+                            <!-- Bar Item -->
+                            <li class="progress tpl-progress" *ngFor="let bar of aria; let i = index;">
+                                <div class="progress-bar" [style.backgroundColor]="bar.color" [style.width]="bar.ariaW + '%'" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                    {{ bar.item }}, % <span>{{ bar.ariaW }}</span>
+                                </div>
+                            </li>
+                            <!-- End Bar Item -->
+                        </ul>
                     </div>
                     
                 </div>

@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  experience = [
+  title: string = 'Experience';
+  experience: any = [
     {
       date_start: 'OCT 2018',
       date_end: 'MAY 2021',
